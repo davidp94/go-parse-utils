@@ -4,13 +4,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"gopkg.in/src-d/go-parse-utils.v1"
+	"gopkg.in/davidp94/go-parse-utils.v1"
 
 	"github.com/stretchr/testify/require"
 	_ "google.golang.org/grpc"
 )
 
-const project = "gopkg.in/src-d/go-parse-utils.v1"
+const project = "gopkg.in/davidp94/go-parse-utils.v1"
 
 var projectPath = func() string {
 	path, err := parseutil.DefaultGoPath.Abs(project)
